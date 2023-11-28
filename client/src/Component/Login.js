@@ -25,7 +25,6 @@ const Login = ()=>{
 
     const  validateValues=(formData)=>
     {
-
         let forEmailRegEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
         let errors = {};
 
