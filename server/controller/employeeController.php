@@ -79,7 +79,7 @@
 
             
             
-            $insertData = json_decode(file_get_contents('php://input'));
+            $insertData = json_decode(file_get_contents('php://input'),true);
        
 
             $duplicate = checkDuplicateData($insertData);
@@ -118,7 +118,7 @@
 
             global $employeeModel;
             
-            $updateData = json_decode(file_get_contents('php://input'));       
+            $updateData = json_decode(file_get_contents('php://input'),true);       
 
             $duplicate = checkDuplicateData($updateData);
 
