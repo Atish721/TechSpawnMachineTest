@@ -52,7 +52,8 @@ const Login = ()=>{
         {          
 
                 const response = await fetch(`http://atish-backend.byethost7.com/server/controller/authController`,{
-                    method:'POST',                             
+                    method:'POST',
+                    mode:'no-cors',
                     headers:{
                         'Content-Type': 'application/json',
                     },
