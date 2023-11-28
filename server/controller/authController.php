@@ -14,7 +14,7 @@
         try {
             global $authModel;
             
-            $loginData = json_decode(file_get_contents('php://input'),true);
+            $loginData = json_decode(file_get_contents('php://input'));
     
             $whereClause='Email = ? and Password = ?';
             $paramTypes='ss';

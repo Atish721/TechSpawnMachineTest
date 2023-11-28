@@ -49,6 +49,12 @@ const UpdateEmployee = ()=>{
             errors.mobile = 'Enter valid mobile'
        }
 
+       setFormData({
+        Name:formData.Name,
+        Mobile:formData.Mobile,
+        Id:formData.Id
+       })
+
        return errors;
     }
 

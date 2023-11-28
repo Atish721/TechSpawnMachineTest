@@ -24,7 +24,6 @@
                     
         $getData = $employeeModel->getDataWhereClause('employees', 'Id,Name,Mobile', $whereClause,$paramTypes,$paramValues);
 
-       
         if($method=='PUT')
         {
             if($getData)
@@ -79,7 +78,7 @@
 
             
             
-            $insertData = json_decode(file_get_contents('php://input'),true);
+            $insertData = json_decode(file_get_contents('php://input'));
        
 
             $duplicate = checkDuplicateData($insertData);
@@ -118,7 +117,7 @@
 
             global $employeeModel;
             
-            $updateData = json_decode(file_get_contents('php://input'),true);       
+            $updateData = json_decode(file_get_contents('php://input'));       
 
             $duplicate = checkDuplicateData($updateData);
 
