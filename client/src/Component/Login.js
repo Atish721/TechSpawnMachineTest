@@ -51,7 +51,7 @@ const Login = ()=>{
         try
         {          
 
-                const response = await fetch(`atish-backend.byethost7.com/server/controller/authController`,{
+                const response = await fetch(`https://atish-backend.byethost7.com/server/controller/authController`,{
                     method:'POST',
                     mode:'no-cors',
                     headers:{
