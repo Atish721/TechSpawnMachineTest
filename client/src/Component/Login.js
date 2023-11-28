@@ -51,7 +51,7 @@ const Login = ()=>{
         try
         {          
 
-                const response = await fetch(`http://localhost/Projects/techSpawnMachineTest/server/controller/authController`,{
+                const response = await fetch(`http://atish-backend.byethost7.com/server/controller/authController`,{
                     method:'POST',                             
                     headers:{
                         'Content-Type': 'application/json',
