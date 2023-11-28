@@ -1,0 +1,12 @@
+const { createProxyMiddleware } = require('http-proxy-middleware');
+
+module.exports = function(app) {
+  app.use(
+    '/api',
+    createProxyMiddleware({
+      target: 'https://atish-backend.byethost7.com',
+      secure:false,
+      changeOrigin: true,
+    })
+  );
+};
