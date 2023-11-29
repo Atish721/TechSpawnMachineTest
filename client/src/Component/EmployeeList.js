@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 const EmployeeList = () =>{
 
     const [employees,setEmployees]=useState([]);
-    const user = localStorage.getItem('user');
-    const parseData = JSON.parse(user)
+
     
     const getEmployeeList= async()=>{
         
             try
             {
-                
+                const user = localStorage.getItem('user');
+                const parseData = JSON.parse(user)
 
                 const response = await fetch(`https://tech-spawn-machine-test-backend.vercel.app/controller/employeeController`,
                 {
