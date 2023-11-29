@@ -1,7 +1,17 @@
 {
-    "functions": {
-      "api/**/*.php": {
-        "runtime": "vercel-php@0.6.0"
-      }
+  "functions": {
+    "api/**/*.php": {
+      "runtime": "vercel-php@0.6.0"
+    }
+  },
+  "routes": [
+    { "src": "/config/(.*)", "dest": "/api/config/$1" },
+    { "src": "/controller/(.*)", "dest": "/api/controller/$1" },
+    { "src": "/model/(.*)", "dest": "/api/model/$1" }
+  ],
+  "build": {
+    "env": {
+      "NOW_PHP_DEBUG": "1"
     }
   }
+}
