@@ -56,8 +56,7 @@ const CreateEmployee = ()=>{
                 const user = localStorage.getItem('user');
                 const parseData = JSON.parse(user)
                 
-
-                const response = await fetch(`http://localhost/Projects/techSpawnMachineTest/server/controller/employeeController`,{
+                const response = await fetch(` https://tech-spawn-machine-test-backend.vercel.app/controller/employeeController`,{
                     method:'POST',                             
                     headers:{
                         'Content-Type': 'application/json',

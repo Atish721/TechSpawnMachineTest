@@ -63,7 +63,7 @@ const UpdateEmployee = ()=>{
         try
         {
 
-            const response = await fetch(`http://localhost/Projects/techSpawnMachineTest/server/controller/employeeController?id=${id}`,{
+            const response = await fetch(` https://tech-spawn-machine-test-backend.vercel.app/controller/employeeController?id=${id}`,{
                 method:'GET',                   
                 headers:{
                     'Content-Type': 'application/json',
@@ -99,7 +99,7 @@ const UpdateEmployee = ()=>{
     const finishSubmit = async () => {
         try
         {
-            const response = await fetch(`http://localhost/Projects/techSpawnMachineTest/server/controller/employeeController`,{
+            const response = await fetch(` https://tech-spawn-machine-test-backend.vercel.app/controller/employeeController`,{
                 method:'PUT',                             
                 headers:{
                     'Content-Type': 'application/json',
