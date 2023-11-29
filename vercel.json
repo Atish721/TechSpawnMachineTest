@@ -1,12 +1,10 @@
 {
   "functions": {
-    "api/**/*.php": {
+    "api/controller/*.php": {
       "runtime": "vercel-php@0.6.0"
     }
   },
-  "build": {
-    "env": {
-      "NOW_PHP_DEBUG": "1"
-    }
-  }
+  "routes": [
+    { "src": "/controller/(.*)", "dest": "/api/controller/authControler.php" }
+  ]
 }
