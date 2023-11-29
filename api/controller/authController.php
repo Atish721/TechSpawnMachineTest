@@ -4,7 +4,7 @@
     header('Access-Control-Allow-Methods: *');
     
     // include_once('../model/authModel.php');
-    include_once($_SERVER['DOCUMENT_ROOT'] . "/model/authModel.php");
+    include_once($_SERVER['DOCUMENT_ROOT'] . "/api/model/authModel.php");
     
     $authModel = new authModel();
     $method = $_SERVER['REQUEST_METHOD'];
