@@ -1,6 +1,8 @@
 <?php 
 error_reporting(-1); ini_set('display_errors', 'On'); 
-require_once('../config/db.php');
+// require_once('../config/db.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/api/config/db.php');
+
 
 class employeeModel {    
     

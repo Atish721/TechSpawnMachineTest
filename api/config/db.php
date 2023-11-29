@@ -1,5 +1,6 @@
 <?php
-require_once ('../config/constants.php');
+// require_once ('../config/constants.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/api/config/constants.php');
 
 class db {
     private $host = DB_SERVER;
