@@ -48,7 +48,7 @@ const EmployeeList = () =>{
     }
 
     const handleDeleteEmployee = async (id)=>{
-        const response = await fetch(` https://tech-spawn-machine-test-backend.vercel.app/controller/employeeController?id=${id}`,{
+        const response = await fetch(`https://tech-spawn-machine-test-backend.vercel.app/controller/employeeController?id=${id}`,{
                 method:'DELETE',                   
                 headers:{
                     'Content-Type': 'application/json',
