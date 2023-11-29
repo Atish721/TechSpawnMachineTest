@@ -3,7 +3,9 @@
     header('Access-Control-Allow-Headers: *');
     header('Access-Control-Allow-Methods: *');
     
-    include_once('../model/employeeModel.php');
+    // include_once('../model/employeeModel.php');
+    include_once($_SERVER['DOCUMENT_ROOT'] . '/api/model/employeeModel.php');
+
     
     $employeeModel = new employeeModel();
     $method = $_SERVER['REQUEST_METHOD'];

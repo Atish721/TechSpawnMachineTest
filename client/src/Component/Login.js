@@ -50,7 +50,7 @@ const Login = ()=>{
         try
         {          
 
-            const response = await fetch(`https://atish-backend.byethost7.com/server/controller/authController`,{
+            const response = await fetch(`https://tech-spawn-machine-test-backend.vercel.app/controller/authController`,{
                 method:'POST',                             
                 headers:{
                     'Content-Type': 'application/json',
