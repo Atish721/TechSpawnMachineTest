@@ -7,7 +7,7 @@
   "routes": [
     { "src": "/config/(.*)", "dest": "/api/config/$1" },
     { "src": "/controller/(.*)", "dest": "/api/controller/$1" },
-    { "src": "/model/(.*)", "dest": "/api/model/$1" }
+    { "src": "/model/(.*)", "dest": "/api/api/model/$1" }
   ],
   "build": {
     "env": {
