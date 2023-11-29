@@ -9,7 +9,6 @@
     $authModel = new authModel();
     $method = $_SERVER['REQUEST_METHOD'];
 
-
     function authUser()
     {
         try {
