@@ -12,7 +12,7 @@ const EmployeeList = () =>{
             {
                 const user = localStorage.getItem('user');
                 const parseData = JSON.parse(user)
-                console.log('token:',parseData?.token)
+                console.log('token:',parseData.token)
 
                 const response = await fetch(`https://tech-spawn-machine-test-backend.vercel.app/controller/employeeController`,
                 {
