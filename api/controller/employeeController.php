@@ -199,10 +199,7 @@
         }        
     }
 
-    echo '<pre>';
-    print_r($headers);
-
-    if(isset($headers['Authorization']) && $headers['Authorization']=='11975259806565b1')// Check or compare token with Database, for demo I used hard coded token
+    if(isset($headers['authorization']) && $headers['authorization']=='11975259806565b1')// Check or compare token with Database, for demo I used hard coded token
     {        
         switch ($method) {
             case 'GET':
